@@ -1,9 +1,31 @@
 body {
     font-family: 'Amatic SC', cursive;
-    min-width: 850px;
+    min-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+
+#logo{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+#background-one{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+#background-two{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#background-three{
+    position: absolute;
+    top: 0px;
+    right: 0px;
 }
 
 a {
