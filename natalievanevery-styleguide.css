@@ -5,3 +5,47 @@ body {
     margin-right: auto;
     text-align: center;
 }
+
+a {
+	list-style-type: none;
+	text-decoration: none;
+}
+
+menu a:link {
+	color: #000;
+	text-decoration: none;
+}
+
+menu a:visited {
+	color: #000;
+}
+
+menu a:hover {
+	color: #FF6666;
+}
+
+menu a:active {
+	color: #000;
+}
+
+.header-nav{
+	width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+	position: relative;
+
+}
+
+.header-nav li{
+	display: inline;
+	list-style-type: none;
+	text-transform: uppercase;
+	letter-spacing: 3.5px;
+	font-size: 2em;
+	color: #F5AB35;
+	padding: 25px;
+}
+
+.header-nav ul{
+    padding: 0px;
+}
