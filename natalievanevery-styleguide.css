@@ -4,6 +4,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    bottom: 0;
 }
 
 #logo{
@@ -70,4 +71,36 @@ menu a:active {
 
 .header-nav ul{
     padding: 0px;
+}
+
+.page-content{
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    margin-top: 100px;
+
+}
+
+.page-content #wordage{
+    font-size: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    width: 300px;
+    overflow: auto;
+}
+
+.page-content img{
+    float: right;
+    overflow: auto;
+    margin-bottom: 100px;
+}
+
+.footer{
+    clear: both;
+    position: absolute;
+    bottom: 50px;
+    left: 48%;
+    margin-left: auto;
+    margin-right: auto;   
 }
