@@ -1,32 +1,18 @@
 body {
     font-family: 'Amatic SC', cursive;
-    min-width: 1000px;
+    min-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     bottom: 0;
+    background-image: url("images/paint-background.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 #logo{
     margin-top: 100px;
     margin-bottom: 50px;
-}
-
-#background-one{
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-}
-
-#background-two{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-}
-#background-three{
-    position: absolute;
-    top: 0px;
-    right: 0px;
 }
 
 a {
@@ -73,7 +59,7 @@ menu a:active {
     padding: 0px;
 }
 
-.page-content{
+.index-page-content{
     margin-left: auto;
     margin-right: auto;
     width: 600px;
@@ -81,7 +67,7 @@ menu a:active {
 
 }
 
-.page-content #wordage{
+.index-page-content #wordage{
     font-size: 1.5em;
     margin-left: auto;
     margin-right: auto;
@@ -90,9 +76,34 @@ menu a:active {
     overflow: auto;
 }
 
-.page-content img{
+.index-page-content img{
     float: right;
     overflow: auto;
+    margin-bottom: 100px;
+}
+
+.about-page-content{
+    margin-left: auto;
+    margin-right: auto;
+    width: 850px;
+    margin-top: 100px;
+
+}
+
+.about-page-content #wordage{
+    font-size: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    width: 300px;
+    overflow: auto;
+}
+
+.about-page-content img{
+    float: right;
+    overflow: auto;
+    padding-top: 100px;
+    width: 400px;
     margin-bottom: 100px;
 }
 
