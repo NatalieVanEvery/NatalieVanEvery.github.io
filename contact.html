@@ -23,8 +23,39 @@
             </header>
         </div>
         
-        <h1>This site is a work in progress! Hosted on Github!</h1>
-        <h2>Contact Page</h2>
+        <div id="form-info">
+            <p>Please feel free to find me on:</p>
+        
+            <p><a href="https://www.instagram.com/natvanevery/" target="_blank">Instagram,</a>
+            <a href="https://plus.google.com/u/0/107718477538179844650/about" target="_blank">Google,</a>
+            <a href="https://m.facebook.com/nataliesve" target="_blank">or Facebook!</a></p>
+            
+            <a href="https://www.instagram.com/natvanevery/" target="_blank"><img id="media-button" src="images/instagram-button.png" alt="instagram button"/></a>
+            
+            <a href="https://plus.google.com/u/0/107718477538179844650/about" target="_blank"><img id="media-button" src="images/google-plus-button.png" alt="google button"/></a>
+            
+            <a href="https://m.facebook.com/nataliesve" target="_blank"><img id="media-button" src="images/facebook-button.png" alt="facebook button"/></a>
+            
+        <p><a href="mailto:natalievanevery@gmail.com">Or email me directly here!</a></p>
+        
+        <p id="form-margin">You can also reach me by filling out the form below.</p>
+            
+        <form id="contact-form" action="natalievanevery.github.io/email.php" method="POST">
+	       <div class="row">
+		      <p>name:</p>
+		      <input id="name" class="input" name="name" type="text"/><br/>
+	       </div>
+	       <div class="row">
+		      <p>email address:</p>
+		      <input id="email" class="input" name="email" type="text"/><br/>
+	       </div>
+	       <div class="row">
+		      <p>message:</p>
+		      <textarea id="message" class="input" name="message"></textarea><br/>
+	       </div>
+	       <input id="submit-button" type="submit" name="send it" value="send it"/>
+        </form>   
+        </div>
         
         <div class="footer">
             <footer>

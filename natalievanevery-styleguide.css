@@ -119,6 +119,63 @@ menu a:active {
     width: 200px;
     padding: 20px;
 }
+#form-info a:link {
+	color: #000;
+	text-decoration: none;
+}
+
+#form-info a:visited {
+	color: #000;
+}
+
+#form-info a:hover {
+	color: #FF6666;
+}
+
+#form-info a:active {
+	color: #000;
+}
+
+#media-button {
+    width: 50px;
+    padding: 25px;
+}
+
+#form-info{
+    font-size: 1.5em;
+}
+
+#contact-form{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+#contact-form input{
+    width: 400px;
+    height: 25px;
+    border: solid .7px #96C63D;
+}
+
+#contact-form textarea{
+    width: 400px;
+    height: 200px; 
+    border: solid .7px #96C63D;
+    margin-bottom: 20px;
+}
+
+#contact-form #submit-button{
+    height: 40px;
+    margin-left: 150px;
+    margin-bottom: 100px;
+    width: 100px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    background-color: #96C63D;
+    color: white;
+}
 
 .footer{
     clear: both;
