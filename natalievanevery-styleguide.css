@@ -107,9 +107,21 @@ menu a:active {
     margin-bottom: 100px;
 }
 
+#gallery-block{
+    width: 800px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery-images{
+    width: 200px;
+    padding: 20px;
+}
+
 .footer{
     clear: both;
-    position: absolute;
     bottom: 50px;
     left: 48%;
     margin-left: auto;
