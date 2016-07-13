@@ -24,21 +24,83 @@
         </div>
         
         <div class="index-page-content">
-            <img id="slideshow" src="images/FPO-poloroid.png" alt="poloroid"/>
-            <div id="wordage">
                 <h1>welcome!</h1>
                 <p>It looks like you found my website! Hooray! Take a look around, I'm constantly 
                     updating my site with new projects I've been working on.</p>
-            </div>
+                <div id="slideshow">
+                    <div class="slides">
+                        <img src="images/nat-tay-slide.png"/>
+                        <p id="nat-and-tay">Hi! I'm Natalie</p>
+                    </div>
+                    <div class="slides">
+                        <img src="images/polka-dot-stripy-suit-slide.png"/>
+                        <p id="polka-dot">Be sure to check out my new designs!</p>
+                    </div>
+                    <div class="slides">
+                        <img src="images/mens-shorts-slide.png"/>
+                        <p id="mens-suit">Men's suits available too!</p>
+                    </div>
+                    <div class="slides">
+                        <img src="images/fushia-suit-slide.png"/>
+                        <p id="fushia-suit">Yay! There is New Inventory!</p>
+                    </div>
+                    <div class="indicator">
+                        <span class="indicator-light" onclick="currentSlide(1)"></span>
+                        <span class="indicator-light" onclick="currentSlide(2)"></span>
+                        <span class="indicator-light" onclick="currentSlide(3)"></span>
+                        <span class="indicator-light" onclick="currentSlide(4)"></span>
+                    </div>
+                </div>
+
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("slides");
+                  var dots = document.getElementsByClassName("indicator-light");
+                  if (n > slides.length) {slideIndex = 1} 
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none"; 
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block"; 
+                  dots[slideIndex-1].className += " active";
+                }
+            </script>
         </div>
         
         <br>
         
-        <div class="footer">
             <footer>
-                <p>&copy;Natalie VanEvery</p>
+                <div class="footer">
+                <div id="follow">
+                    <p>follow me!</p>
+                    <a href="https://www.instagram.com/natvanevery/" target="_blank"><img id="media-button" src="images/instagram-button.png" alt="instagram button"/></a>
+            
+                    <a href="https://plus.google.com/u/0/107718477538179844650/about" target="_blank"><img id="media-button" src="images/google-plus-button.png" alt="google button"/></a>
+            
+                    <a href="https://m.facebook.com/nataliesve" target="_blank"><img id="media-button" src="images/facebook-button.png" alt="facebook button"/></a>
+                </div>
+                <div id="location">
+                    <p>location</p>
+                    <span>I'm in austin texas. Go to my contact page to learn more.</span>
+                </div>
+                </div>
+                <p>Copyright All Rights Reserved &copy; 2016 --- Natalie VanEvery</p>
             </footer>
-        </div>
         
     </body>
 </html>
