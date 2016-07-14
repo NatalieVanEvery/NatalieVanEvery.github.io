@@ -274,6 +274,59 @@ h1,h2,h3,h4,h5,h6{
     color: white;
 }
 
+/*****STORE PAGE*****/
+.checkout{
+    position: fixed;
+    top: 0;
+    right: 125px;
+    background-color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 4px;
+    opacity: .8;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+a.snipcart-user-profile {
+    font-family: 'BenchNine', sans-serif;
+    color: black;
+}
+
+a.snipcart-checkout {
+    font-family: 'BenchNine', sans-serif;
+    color: black;
+}
+
+#icons{
+    width: 40px;
+}
+
+button.snipcart-add-item {
+    position: relative;
+    top: -15px;
+    left: -50px;
+    font-family: 'BenchNine', sans-serif;
+    text-transform: uppercase;
+    font-size: .8em;
+    color: white;
+    background-color: #FF6666;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px #D4D4D4;
+}
+
+img#store-images.gallery-images{
+    margin-top: 100px;
+    border: 1px solid #FF6666;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+}
+
 /*****FOOTER STYLING*****/
 .footer{
     position: relative;

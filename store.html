@@ -5,9 +5,12 @@
         <title>Natalie Van Every</title>
         <link href="natalievanevery-styleguide.css" type="text/css" rel="stylesheet" />
         <link href='https://fonts.googleapis.com/css?family=Amatic+SC|BenchNine:300' rel='stylesheet' type='text/css'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="MWEwNmJjMGItOTgxZS00MzJlLThjNjktYWY5ZTE3YzhjZWVkNjM2MDQwNDEyNTUxNDEwNTUz"></script>
+        <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
-        <a href="index.html"><img id="logo" src="images/Nat-logo.png" alt="Michele Cope Logo"/></a>
+        <a href="index.html"><img id="logo" src="images/Nat-logo.png" alt="Natalie VanEvery"/></a>
         
         <div class="header">
             <header class="header-nav">
@@ -23,27 +26,74 @@
             </header>
         </div>
         
-            <img class="gallery-images" src="images/fushia-suit.png" alt="fushia suit"/>
-            <img class="gallery-images" src="images/polka-dot-stripy-suit.png" alt="polka dot suit"/>
-            <img class="gallery-images" src="images/mens-shorts.png" alt="mens suit"/>
+        <div class="checkout">
+            <div class="snipcart-summary">
+                <a href="#" class="snipcart-user-profile"><img id="icons" src="images/user.png" alt="user icon"/></a> &nbsp &nbsp &nbsp
+                <a href="#" class="snipcart-checkout"><img id="icons" src="images/checkout.png" alt="checkout icon"/></a>
+            </div>
+            <div class="snipcart-summary">
+                Items: <span class="snipcart-total-items"></span> &nbsp &nbsp
+                Total: <span class="snipcart-total-price"></span>
+            </div>
+        </div>
         
-            <footer>
-                <div class="footer">
-                <div id="follow">
-                    <h4>follow me!</h4>
-                    <a href="https://www.instagram.com/natvanevery/" target="_blank"><img id="media-button" src="images/instagram-button.png" alt="instagram button"/></a>
-            
-                    <a href="https://plus.google.com/u/0/107718477538179844650/about" target="_blank"><img id="media-button" src="images/google-plus-button.png" alt="google button"/></a>
-            
-                    <a href="https://m.facebook.com/nataliesve" target="_blank"><img id="media-button" src="images/facebook-button.png" alt="facebook button"/></a>
-                </div>
-                <div id="location">
-                    <h4>location</h4>
-                    <span>I'm in austin texas. Go to my contact page to learn more.</span>
-                </div>
-                </div>
-                <p>Copyright All Rights Reserved &copy; 2016 --- Natalie VanEvery</p>
-            </footer>
+        <div>
+            <img class="gallery-images" id="store-images" src="images/fushia-suit.png" alt="fushia suit"/>
+            <button
+                class="snipcart-add-item"
+                data-item-id="1"
+                data-item-name="fushia suit"
+                data-item-price="60.00"
+                data-item-weight="2.5"
+                data-item-url="http://natalievanevery.github.io/store.html"
+                data-item-description="Available in S, M, L. Please check out my sizing page for more information.">
+                    Get it!
+            </button>
         
+            <img class="gallery-images" id="store-images" src="images/polka-dot-stripy-suit.png" alt="polka dot suit"/>
+                    <button
+                class="snipcart-add-item"
+                data-item-id="2"
+                data-item-name="polka-dot suit"
+                data-item-price="80.00"
+                data-item-weight="2.5"
+                data-item-url="http://natalievanevery.github.io/store.html"
+                data-item-description="Available in S, M, L. Please check out my sizing page for more information.">
+                    Get it!
+            </button>
+        
+            <img class="gallery-images" id="store-images" src="images/mens-shorts.png" alt="mens suit"/>
+                    <button
+                class="snipcart-add-item"
+                data-item-id="3"
+                data-item-name="mens tiger-monkey suit"
+                data-item-price="40.00"
+                data-item-weight="2.5"
+                data-item-url="http://natalievanevery.github.io/store.html"
+                data-item-description="Available in S, M, L. Please check out my sizing page for more information.">
+                    Get it!
+            </button>
+        </div>   
+            
+            <br>
+          
+    <footer>
+        <div class="footer">
+        <div id="follow">
+            <h4>follow me!</h4>
+            <a href="https://www.instagram.com/natvanevery/" target="_blank"><img id="media-button" src="images/instagram-button.png" alt="instagram button"/></a>
+
+            <a href="https://plus.google.com/u/0/107718477538179844650/about" target="_blank"><img id="media-button" src="images/google-plus-button.png" alt="google button"/></a>
+
+            <a href="https://m.facebook.com/nataliesve" target="_blank"><img id="media-button" src="images/facebook-button.png" alt="facebook button"/></a>
+        </div>
+        <div id="location">
+            <h4>location</h4>
+            <span>I'm in austin texas. Go to my contact page to learn more.</span>
+        </div>
+        </div>
+        <p>Copyright All Rights Reserved &copy; 2016 --- Natalie VanEvery</p>
+    </footer>
+
     </body>
 </html>
