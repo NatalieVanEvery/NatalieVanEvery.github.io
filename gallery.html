@@ -27,20 +27,24 @@
         </div>
         
         <div id="gallery-block">
-            <img class="gallery-images" src="images/black-bottoms.png" alt="black bottoms"/>
-            <img class="gallery-images" src="images/pinky-stripy-bottoms.png" alt="pink stripy bottoms"/>
-            <img class="gallery-images" src="images/red-bottoms.png" alt="red bottoms"/>
-            <img class="gallery-images" src="images/black-top.png" alt="black top"/>
-            <img class="gallery-images" src="images/polka-dot-front.png" alt="polka dot top"/>
-            <img class="gallery-images" src="images/fushia-top.png" alt="fushia top"/>
-            <img class="gallery-images" src="images/pink-top.png" alt="pink top"/>
-            <img class="gallery-images" src="images/fushia-suit.png" alt="fushia suit"/>
-            <img class="gallery-images" src="images/polka-dot-stripy-suit.png" alt="polka dot suit"/>
-            <img class="gallery-images" src="images/mens-shorts.png" alt="mens suit"/>
+            <img onclick="currentPopup(0)" class="gallery-images" src="images/black-bottoms-small.png" alt="black bottoms"/>
+            <img onclick="currentPopup(1)" class="gallery-images" src="images/pinky-stripy-bottoms-small.png" alt="pink stripy bottoms"/>
+            <img onclick="currentPopup(2)" class="gallery-images" src="images/red-bottoms-small.png" alt="red bottoms"/>
+            <img onclick="currentPopup(3)" class="gallery-images" src="images/black-top-small.png" alt="black top"/>
+            <img onclick="currentPopup(4)" class="gallery-images" src="images/polka-dot-front-small.png" alt="polka dot top"/>
+            <img onclick="currentPopup(5)" class="gallery-images" src="images/fushia-top-small.png" alt="fushia top"/>
+            <img onclick="currentPopup(6)" class="gallery-images" src="images/pink-top-small.png" alt="pink top"/>
+            <img onclick="currentPopup(7)" class="gallery-images" src="images/fushia-suit-small.png" alt="fushia suit"/>
+            <img onclick="currentPopup(8)" class="gallery-images" src="images/polka-dot-stripy-suit-small.png" alt="polka dot suit"/>
+            <img onclick="currentPopup(9)" class="gallery-images" src="images/mens-shorts-small.png" alt="mens suit"/>
         </div>
         
         <div class="hidden" id="pop-up">
-            HERE I AM!
+            <div id="pop-up-info">
+                <h4 id="product-name"></h4>
+                <p id="description"></p>
+            </div> 
+            <span onclick="closeSpan()" id="close">click here to close</span>
         </div>
         
         <script src="nat-site-controller.js"></script>
