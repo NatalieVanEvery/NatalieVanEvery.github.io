@@ -56,31 +56,22 @@
                 </div>
 
             <script>
-                var slideIndex = 1;
-                showSlides(slideIndex);
+                var myIndex = 0;
+                carousel();
 
-                function plusSlides(n) {
-                  showSlides(slideIndex += n);
-                }
-
-                function currentSlide(n) {
-                  showSlides(slideIndex = n);
-                }
-
-                function showSlides(n) {
-                  var i;
-                  var slides = document.getElementsByClassName("slides");
-                  var dots = document.getElementsByClassName("indicator-light");
-                  if (n > slides.length) {slideIndex = 1} 
-                  if (n < 1) {slideIndex = slides.length}
-                  for (i = 0; i < slides.length; i++) {
-                      slides[i].style.display = "none"; 
-                  }
-                  for (i = 0; i < dots.length; i++) {
-                      dots[i].className = dots[i].className.replace(" active", "");
-                  }
-                  slides[slideIndex-1].style.display = "block"; 
-                  dots[slideIndex-1].className += " active";
+                function carousel() {
+                    var i;
+                    var slides = document.getElementsByClassName("slides");
+                    var indicators = document.getElementsByClassName("indicator-light");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                        indicators[i].className = "indicator-light";
+                    }
+                    myIndex++;
+                    if (myIndex > slides.length) {myIndex = 1}
+                    slides[myIndex-1].style.display = "block";
+                    indicators[myIndex-1].className += " active";
+                    setTimeout(carousel, 3000); // Change image every 2 seconds
                 }
             </script>
         </div>

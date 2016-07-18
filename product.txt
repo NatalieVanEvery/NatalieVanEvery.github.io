@@ -1,0 +1,17 @@
+[
+    {
+        "imgUrl": "images/black-bottoms.png",
+        "name": "Black Bottoms",
+        "description" : "Black Nylon fabric"
+    },
+    {
+        "imgUrl": "images/pinky-stripy-bottoms.png",
+        "name": "Striped Peach Bottoms",
+        "description" : "Black Nylon fabric"
+    },
+    {
+        "imgUrl": "images/red-bottoms.png",
+        "name": "Red Bottoms",
+        "description" : "Black Nylon fabric"
+    }
+]
