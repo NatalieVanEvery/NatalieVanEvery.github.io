@@ -24,20 +24,42 @@ function getProducts() {
 
 getProducts();
 
+function currentPopup(n) {
+    displayProductDetails(productIndex = n);
+}
+
 //prepare product image and information to show
 //create function to add an product info
 function displayProductDetails(productIndex) {
+    
     var product = products[productIndex];
+    
     //create img element
     var newImg = document.createElement("img");
-    //add img source attribute to element
-    var srcAtt = document.createAttribute("src");
-    srcAtt.value = product.imgUrl;
-    newImg.setAttributeNode(srcAtt);
+    var srcImgAtt = document.createAttribute("src");
+    srcImgAtt.value = product.imgUrl;
+    newImg.setAttributeNode(srcImgAtt);
+    
+    //populate product name element
+    document.getElementById("product-name").innerHTML = product.name;
+    
+    //populate description element
+    document.getElementById("description").innerHTML = product.description;
+   
     //add new image element with it's content to the DOM
     var newDiv = document.getElementById("pop-up");
     //add the new image to the pop-upwindow
     newDiv.removeChild(newDiv.lastChild);
     newDiv.appendChild(newImg);
     newDiv.className = "";
-} 
+
+    //window.onclick = function() {
+     //   newDiv.className = "pop-up";
+    //}
+}
+
+function closeSpan() {
+    var newDiv = document.getElementById("pop-up");
+    //add the new image to the pop-upwindow
+    newDiv.className = "hidden";
+}
